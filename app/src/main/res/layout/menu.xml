@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <EditText
+            android:id="@+id/yearET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/termRG"
+            android:hint="学年"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/termRG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/menuScoreQueryBt"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/termFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="上" />
+
+            <RadioButton
+                android:id="@+id/termSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/menuScoreQueryBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="成绩查询" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/menuLogoutBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录" />
+</LinearLayout>
